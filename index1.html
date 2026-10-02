@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt nulla nemo repellendus hic soluta facere illo numquam, fuga totam libero rem nobis iusto et repudiandae quasi ipsam quas similique laudantium!</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo accusamus eum, veniam modi, obcaecati, labore fugiat aliquam doloribus voluptas consectetur nesciunt excepturi tenetur dolore minus architecto veritatis. Repudiandae, inventore harum.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo animi doloribus quod ratione optio rerum quia esse libero, sequi eos ipsam maxime molestias id voluptates dicta quibusdam quam cupiditate eveniet!</p>  
+</div>
+
+   <div class="container">
+     <div class="box1">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur itaque doloribus in, distinctio voluptatibus autem aliquid qui ratione hic! Excepturi consectetur voluptate beatae, optio facilis nam dolor inventore doloremque voluptatum!</p>
+     </div>
+     <div class="box2">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur itaque doloribus in, distinctio voluptatibus autem aliquid qui ratione hic! Excepturi consectetur voluptate beatae, optio facilis nam dolor inventore doloremque voluptatum!</p>
+     </div>
+     <div class="box3">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur itaque doloribus in, distinctio voluptatibus autem aliquid qui ratione hic! Excepturi consectetur voluptate beatae, optio facilis nam dolor inventore doloremque voluptatum!</p>
+     </div>
+     <div class="box3">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur itaque doloribus in, distinctio voluptatibus autem aliquid qui ratione hic! Excepturi consectetur voluptate beatae, optio facilis nam dolor inventore doloremque voluptatum!</p>
+     </div>
+     <div class="box3">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur itaque doloribus in, distinctio voluptatibus autem aliquid qui ratione hic! Excepturi consectetur voluptate beatae, optio facilis nam dolor inventore doloremque voluptatum!</p>
+     </div>
+
+   </div>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit in numquam et accusamus, corporis velit necessitatibus non dolore dolorem aspernatur reiciendis sunt culpa similique soluta quasi ipsa itaque consectetur accusantium.</p>
+   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, quae incidunt, ratione perspiciatis qui pariatur quia eius commodi, error ipsum fuga rerum. Consectetur dolor eum id nesciunt saepe doloremque recusandae.</p>
+
+<ul >  
+   <li id="liste">Asma</li>
+   <li>Nour</li>
+</ul>
+
+<script>
+console.log(document.body.nodeType);
+console.log(document.body.nodeName);
+const body = document.body;
+console.log(body.children.length);        // 5 : div, div.container, p, p, script      // plus grand : inclut les nœuds texte d'espaces
+console.log(body.firstElementChild);      // le premier <div>
+console.log(body.lastElementChild.nodeName); // "SCRIPT"
+const liste=document.querySelector('#liste');
+liste.textContent="bonjour";
+const x=document.querySelector("ul");
+const y=document.createElement("li");
+y.textContent="ALIA";
+x.appendChild(y);
+
+y.remove();
+
+</script>
+</body>
+</html>

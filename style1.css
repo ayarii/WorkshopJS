@@ -1,0 +1,45 @@
+p:last-child{
+    color: pink;
+}
+
+.container{
+    display: flex;
+    justify-content: space-evenly;
+}
+p::first-letter{
+    background-color: darkmagenta;
+}
+
+
+
+
+.box1{
+    background-color: aqua;
+    width: 200px;
+    height: 200px;
+   
+   
+
+}
+
+.box2{
+    background-color: rgb(23, 140, 140);
+    width: 200px;
+    height: 200px;
+}
+
+.box3{
+    background-color: rgb(0, 255, 149);
+    width: 200px;
+    height: 200px;
+  
+}
+
+@media(max-width: 500px) { 
+   p{
+    font-size: 10px;
+   }
+   body{
+    background-color: rgb(55, 60, 96);
+   }
+}

@@ -1,0 +1,86 @@
+        button {
+            background-color: blue;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: orange;
+        }
+
+        button:active {
+            background-color: red;
+        }
+
+        input:focus {
+            border: 2px solid green;
+           
+        }
+
+     p:first-child {
+            color: red;
+        }
+
+        li:nth-child(even) {
+            background-color: lightgray;
+        }
+
+        input:checked + label {
+            color: green;
+        }
+
+
+        /* 1. STATIC */
+        .static {
+            position: static;
+            background-color: lightblue;
+            padding: 10px;
+        }
+
+        /* 2. RELATIVE */
+        .relative {
+            position: relative;
+            top: 15px;
+            left: 30px;
+            background-color: lightgreen;
+            padding: 10px;
+        }
+
+        /* 3. ABSOLUTE */
+        .parent {
+            position: relative;
+            height: 150px;
+            background-color: #eeeeee;
+            border: 2px solid black;
+            margin-bottom: 30px;
+        }
+
+        .absolute {
+            position: absolute;
+            top: 20px;
+         right: 20px;
+            background-color: orange;
+            padding: 10px;
+        }
+
+        /* 4. FIXED */
+        .fixed {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            background-color: tomato;
+            color: white;
+            padding: 12px;
+            z-index: 10;
+        }
+
+         .container {
+            background-color: #eeeeee;
+            border: 2px solid black;
+            padding: 15px;
+            margin-bottom: 30px;
+            height: 150px;
+        }
+    
