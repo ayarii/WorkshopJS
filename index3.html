@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1 id="titre">Bonjour</h1>
+<a id="lien" href="https://example.com" title="Site exemple">Mon lien</a>
+<button id="btn" class="bouton">Cliquer</button>
+
+<script>
+    const titre = document.getElementById("titre");
+
+console.log(titre.textContent);   // "Bonjour"  (lecture)
+titre.textContent = "Salut !";    // écriture : le texte change
+
+console.log(titre.innerHTML);     // "Salut !"
+titre.innerHTML = "<em>Salut</em> <strong>toi</strong>";
+// À l'écran : Salut toi  (en italique et en gras : les balises sont interprétées)
+const lien = document.getElementById("lien");
+
+console.log(lien.getAttribute("href"));   // "https://example.com"
+console.log(lien.getAttribute("title"));  // "Site exemple"
+console.log(lien.getAttribute("target")); // null (n'existe pas)
+
+lien.setAttribute("href", "https://google.com");  // modifie
+lien.setAttribute("target", "_blank");            // crée (s'ouvre dans un nouvel onglet)
+
+console.log(lien.hasAttribute("target")); // true  (on vient de le créer)
+console.log(lien.hasAttribute("rel"));    // false
+
+lien.removeAttribute("target");
+console.log(lien.hasAttribute("target")); // false
+
+</script>
+</body>
+</html>

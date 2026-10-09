@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn-envoyer">Envoyer</button>
+    <p class="message">Bonjour</p>
+<p class="message">Salut</p>
+<p class="message">Coucou</p>
+    <script>
+        const bouton = document.getElementById("btn-envoyer"); // sans # !
+bouton.addEventListener("click", () => console.log("Envoyé"));
+const messages = document.getElementsByClassName("message"); // sans point !
+console.log(messages.length); // 3 
+
+document.querySelector("#btn-envoyer");      // un id (avec #)
+document.querySelector(".message");          // 1er élément de la classe (avec .)
+document.querySelectorAll(".message");       // tous les éléments de la classe
+document.querySelector("form input[type='email']"); // sélection précise
+    </script>
+</body>
+</html>
